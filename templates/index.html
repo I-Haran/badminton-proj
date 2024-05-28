@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>MRS Sports Academy</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">MSR</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Memberships</a></li>
+        <li class="link"><a href="#">Slots</a></li>
+        <li class="link"><a href="#">About</a></li>
+        <li class="link"><a href="#">Contact</a></li>
+      </ul>
+      <button class="btn">Sign Up / Log In </button>
+    </nav>
+    <header class="section__container header__container">
+      <h1 class="section__header">MSR<br /><span style="color: gray; font-weight: 900; -webkit-text-stroke: 1px rgba(0, 0, 0, 0.709);" >Sports Academy</span> </h1>
+      <img src="{{ url_for('static', filename='assets/hero-img.png') }}" alt="header" />
+      <a class="hero-btn">Book Your Slots</a>
+    </header>
+
+    <!-- <section class="section__container booking__container">
+      <div class="booking__nav">
+        <span>Economy Class</span>
+        <span>Business Class</span>
+        <span>First Class</span>
+      </div>
+      <form>
+        <div class="form__group">
+          <span><i class="ri-map-pin-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Location</label>
+            </div>
+            <p>Where are you going?</p>
+          </div>
+        </div>
+        <div class="form__group">
+          <span><i class="ri-user-3-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="number" />
+              <label>Travellers</label>
+            </div>
+            <p>Add guests</p>
+          </div>
+        </div>
+        <div class="form__group">
+          <span><i class="ri-calendar-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Departure</label>
+            </div>
+            <p>Add date</p>
+          </div>
+        </div>
+        <div class="form__group">
+          <span><i class="ri-calendar-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" />
+              <label>Return</label>
+            </div>
+            <p>Add date</p>
+          </div>
+        </div>
+        <button class="btn"><i class="ri-search-line"></i></button>
+      </form>
+    </section> -->
+
+    <section class="memories">
+      <div class="section__container memories__container">
+        <div class="memories__header">
+          <h2 class="section__header">
+            MEMBERSHIPS
+          </h2>
+         
+        </div>
+        <div class="memories__grid">
+          <div  class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Plan 1</h4>
+            <p>
+              With "Book and Relax," you can sit back, unwind, and enjoy the
+              journey while we take care of everything else.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Plan 2</h4>
+            <p>
+              Introducing Smart Checklist with us, the innovative solution
+              revolutionizing the way you travel with our airline.
+            </p>
+          </div>
+          <div class="memories__card">
+            <span><i class="ri-bookmark-2-line"></i></span>
+            <h4>Plan 3</h4>
+            <p>
+              From discounted ticket prices to exclusive promotions and deals,
+              we prioritize affordability without compromising on quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ABOUT US PAGE -->
+
+
+    <section class="section__container plan__container">
+      <h2 class="section__header">About Us</h2>
+      <div class="plan__grid">
+        <div class="plan__content">
+          <p>
+            Established in 2018 in Iyyappanthangal, MSR Sports Academy offers top-quality badminton coaching. Conveniently located near Ramachandra Hospital, behind Prince Highlands and Dakshin Apartment, it is easily accessible for Chennai residents. The vibrant surroundings enhance the energetic atmosphere, making it an ideal choice for aspiring players.
+          </p>
+          <span class="number">02</span>
+          <h4>Msr Sports Academy's Stellar Offerings</h4>
+          <p>
+            MSR Sports Academy offers badminton classes for all skill levels and age groups, including beginner, advanced, and specialized workshops. Catering to singles and doubles, the academy ensures a holistic learning experience with experienced instructors. Options include one-on-one sessions, group lessons, and practice times, with special programs for competitive players.
+
+            For more details, contact MSR Sports Academy.
+          </p>
+          <span class="number">03</span>
+          <h4>Why to choose MSR ?</h4>
+          <p>
+            Our academy offers top-notch training for all skill levels. With personalized attention and a dynamic setting, it’s the perfect place to master badminton. Ready to start your badminton journey? Choose MSR Sports Academy for excellence in training.
+          </p>
+        </div>
+        <div class="plan__image">
+          <img src="{{ url_for('static', filename='assets/place-img1.jpeg') }}" alt="plan" />
+          <img src="{{ url_for('static', filename='assets/place-img2.jpg') }}" alt="plan" />
+          <img src="{{ url_for('static', filename='assets/place-img3.jpg') }}" alt="plan" />
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF ABT US PAGE -->
+    
+
+    <section class="section__container lounge__container">
+      <div class="lounge__image">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.936495711158!2d80.13553077484265!3d13.039714187281913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261a8d88ca0b3%3A0x47ee4b21ea427bc7!2sMSR%20Sports%20Academy%20(Badminton%2C%20Football%20Turf%2C%20volleyball%2C%20Box%20Cricket%2C%20Silambam)!5e0!3m2!1sen!2sin!4v1716831744369!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="lounge__content">
+        <h2 class="section__header">Contact</h2>
+        <div class="lounge__grid">
+          <form>
+            <div class="formc">
+              <label>Name</label><br>
+              <input type="text" required/><br>
+              <label>email</label><br>
+              <input type="email"required/><br>
+              <label>Message</label><br>
+              <input type="textarea"/><br>
+             <button>Submit</button>
+            </div>
+
+              </form>
+              
+  
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section__container travellers__container">
+      <h2 class="section__header">Best travellers of the month</h2>
+      <div class="travellers__grid">
+        <div class="travellers__card">
+          <img src="assets/traveller-1.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/client-1.jpg" alt="client" />
+            <h4>Emily Johnson</h4>
+            <p>Dubai</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="assets/traveller-2.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/client-2.jpg" alt="client" />
+            <h4>David Smith</h4>
+            <p>Paris</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="assets/traveller-3.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/client-3.jpg" alt="client" />
+            <h4>Olivia Brown</h4>
+            <p>Singapore</p>
+          </div>
+        </div>
+        <div class="travellers__card">
+          <img src="assets/traveller-4.jpg" alt="traveller" />
+          <div class="travellers__card__content">
+            <img src="assets/client-4.jpg" alt="client" />
+            <h4>Daniel Taylor</h4>
+            <p>Malaysia</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="subscribe">
+      <div class="section__container subscribe__container">
+        <h2 class="section__header">Subscribe newsletter & get latest news</h2>
+        <form class="subscribe__form">
+          <input type="text" placeholder="Enter your email here" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>MSR</h3>
+          <p>
+            Established in 2018, MSR Sports Academy in Iyyappanthangal, Chennai, offers top-notch badminton coaching for all skill levels. Conveniently located near Ramachandra Hospital, it provides a dynamic and accessible environment for players to learn and excel in badminton.
+          </p>
+     
+        </div>
+        <div class="footer__col">
+          <h4>INFORMATION</h4>
+          <p>Home</p>
+          <p>About</p>
+          <p>Memberships</p>
+        </div>
+        <div class="footer__col">
+          <h4>CONTACT</h4>
+          <p>Support</p>
+          <p>Media</p>
+          <p>Socials</p>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+       
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">AOS.init();</script>
+</html>
